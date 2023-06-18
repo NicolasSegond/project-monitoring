@@ -26,7 +26,7 @@ switch($action){
 
         if ($nomOK && $descriptionOK){
             echo 'tout est ok, nous allons pouvoir enregistrer votre module...<br/>';
-            $resultat = creerModule($nom,$description,$etat);
+            $resultat = creerModule($nom, $_SESSION['id'], $description,$etat);
 
             if($resultat == true){
                 echo "Module crée";

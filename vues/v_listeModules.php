@@ -23,7 +23,7 @@
                 <td><?php echo $modules['DerniereMiseAJour'] ?></td>
                 <td><?php echo $modules['Etat'] ?></td>
                 <td>
-                  <form method="POST"  action="http://localhost/testMonitoring/index.php?uc=listeModule&action=detailsModule&id=<?php echo $modules['id'] ?>">
+                  <form method="POST"  action="http://localhost/projet-monitoring/index.php?uc=listeModule&action=detailsModule&id=<?php echo $modules['id'] ?>">
                     <input type="submit" name="maj" class="btn btn-primary" value="Consulter les statistiques"/>
                   </form>
                 </td>

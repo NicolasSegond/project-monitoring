@@ -37,7 +37,7 @@
                         <div class="rond rouge ms-2" id='boule1'></div>
                         <p class="text-white fs-6 ms-1 mb-0 text-start"> <?php echo $modulesInactifs['etat'] ?> </p>
                     </div>
-                    <form method="POST" action="http://localhost/testMonitoring/index.php?uc=tableauBord&action=supprimerNotification&idNotification=<?php echo $modulesInactifs['ID'] ?>">
+                    <form method="POST" action="http://localhost/projet-monitoring/index.php?uc=tableauBord&action=supprimerNotification&idNotification=<?php echo $modulesInactifs['ID'] ?>">
                         <button type="submit" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </form>
                 </div>

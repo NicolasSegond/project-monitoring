@@ -39,15 +39,15 @@
                 </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="http://localhost/testMonitoring/index.php?uc=tableauBord&action=afficherTableau" class="nav-link">
+                        <a href="http://localhost/projet-monitoring/index.php?uc=tableauBord&action=afficherTableau" class="nav-link">
                             <i class="bi bi-card-text"></i> Tableau de bord
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/testMonitoring/index.php?uc=listeModule&action=listeModules"> <i class="bi bi-pie-chart"></i> Liste modules</a>
+                        <a class="nav-link" href="http://localhost/projet-monitoring/index.php?uc=listeModule&action=listeModules"> <i class="bi bi-pie-chart"></i> Liste modules</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/testMonitoring/index.php?uc=creationModule&action=creerModule"><i class="bi bi-plus-circle"></i> Ajouter un module</a>
+                        <a class="nav-link" href="http://localhost/projet-monitoring/index.php?uc=creationModule&action=creerModule"><i class="bi bi-plus-circle"></i> Ajouter un module</a>
                     </li>
 
                 </ul>

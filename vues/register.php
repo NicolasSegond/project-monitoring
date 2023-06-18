@@ -18,7 +18,7 @@
         <div class="text-center mt-4 name">
             IOT Monitoring
         </div>
-        <form method="POST" class="p-3 mt-3" action="http://localhost/testMonitoring/index.php?uc=inscription&action=inscriptionValider">
+        <form method="POST" class="p-3 mt-3" action="http://localhost/projet-monitoring/index.php?uc=inscription&action=inscriptionValider">
             <div class="form-field d-flex align-items-center">
                 <input type="text" class="w-100" name="nom" id="nom" placeholder="Nom">
             </div>
@@ -34,7 +34,7 @@
             <button type="submit" name="submit" class="btn mt-3 w-100">S'inscrire</button>
         </form>
         <div class="text-center fs-6">
-            <a href="http://localhost/testMonitoring/index.php?uc=connexion&action=demandeConnexion " class="fs-5 text-decoration-none text-info"> Se connecter </a>
+            <a href="http://localhost/projet-monitoring/index.php?uc=connexion&action=demandeConnexion " class="fs-5 text-decoration-none text-info"> Se connecter </a>
         </div>
     </div>
 </body>
