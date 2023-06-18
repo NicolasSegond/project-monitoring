@@ -1,13 +1,3 @@
-html, body {
-    max-height: 170vh;
-    min-height: 100vh;
-}
-
-.sidebar {
-    color: #fff;
-    height: 100vh;
-}
-
 .sidebar .nav-link {
     color: #fff;
 }
@@ -250,14 +240,4 @@ html, body {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
     }
-}
-
-.static {
-    position: fixed;
-    z-index: 999;
-}
-
-.fix-in-right {
-    position: absolute;
-    right: 0;
 }

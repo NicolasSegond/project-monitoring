@@ -18,9 +18,9 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-2 sidebar p-0 bg-primary static">
+            <div class="col-md-2 sidebar p-0 bg-primary position-fixed h-100">
                 <div class="d-flex justify-content-center align-items-center p-4 border-bottom border-light border-opacity-50">
-                    <h5 class="mb-0">IOT Monitoring</h5>
+                    <h5 class="mb-0 text-light">IOT Monitoring</h5>
                 </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -39,8 +39,8 @@
             </div>
 
             <!-- Contenu principal -->
-            <div class="col-md-10 content p-0 h-auto fix-in-right">
-                <nav class="navbar navbar-expand-lg bg-light" style="height: 73px; border-bottom: 1px solid rgba(0,0,0,.1);">
+            <div class="col-md-10 content p-0 h-100 position-absolute end-0">
+                <nav class="navbar navbar-expand-lg bg-light w-100" style="height: 73px; border-bottom: 1px solid rgba(0,0,0,.1);">
                     <div class="container-fluid d-flex justify-content-center align-items-center">
                         <span class="fs-5 text-secondary">Dashboard</span>
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
