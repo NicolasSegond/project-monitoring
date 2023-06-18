@@ -1,0 +1,254 @@
+html,
+body {
+    max-height: 170vh;
+    min-height: 100vh;
+}
+
+.sidebar {
+    color: #fff;
+    height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+}
+
+.nav-link {
+    font-size: 17px;
+    line-height: 40px;
+    padding: 10px 15px;
+    margin: 5px 15px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .23)
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 170vh;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.wrapper {
+    padding-left: 0;
+    float: left;
+    width: 250px;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-height: 170vh;
+    height: auto;
+    min-height: 100vh;
+}
+
+.wrapper.toggled {
+    padding-left: 250px;
+}
+
+.sidebar-wrapper {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.wrapper.toggled .sidebar-wrapper {
+    width: 250px;
+}
+
+.sidebar-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    width: auto;
+    padding: 10px 15px;
+    margin: 5px 15px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-nav li a:not(li[class="sidebar-brand"] > a) {
+    font-size: 17px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .23)
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    padding: 0;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #ffffff;
+    padding: 0;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    background: none;
+}
+
+@media(min-width:768px) {
+
+    .wrapper.toggled {
+        padding-left: 0;
+    }
+
+    .sidebar-wrapper {
+        width: 250px;
+    }
+
+    .wrapper.toggled .sidebar-wrapper {
+        width: 0;
+    }
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    width: calc(100%-200px);
+    height: 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: white;
+}
+
+.navbar-brand {
+    font-weight: 400;
+    margin: 5px 0;
+    font-size: 20px;
+    color: #888;
+}
+
+.contenu {
+    width: calc(100% - 250px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rond{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+}
+
+.rouge {
+    background: #BF0404;
+}
+
+.rouge:hover {
+    background: #fa1e1e;
+}
+
+.max-height{
+    max-height: 80vh;
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
