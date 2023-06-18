@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     max-height: 170vh;
     min-height: 100vh;
 }
@@ -111,7 +110,7 @@ body {
     text-decoration: none;
 }
 
-.sidebar-nav>.sidebar-brand {
+.sidebar-nav > .sidebar-brand {
     padding: 0;
     height: 70px;
     font-size: 20px;
@@ -123,16 +122,16 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
-.sidebar-nav>.sidebar-brand a {
+.sidebar-nav > .sidebar-brand a {
     color: #ffffff;
     padding: 0;
 }
 
-.sidebar-nav>.sidebar-brand a:hover {
+.sidebar-nav > .sidebar-brand a:hover {
     background: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
 
     .wrapper.toggled {
         padding-left: 0;
@@ -170,7 +169,7 @@ body {
     flex-direction: column;
 }
 
-.rond{
+.rond {
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -186,7 +185,7 @@ body {
     background: #fa1e1e;
 }
 
-.max-height{
+.max-height {
     max-height: 80vh;
 }
 
@@ -235,7 +234,7 @@ body {
     color: #fff;
     border-radius: 25px;
     box-shadow: 3px 3px 3px #b1b1b1,
-        -3px -3px 3px #fff;
+    -3px -3px 3px #fff;
 }
 
 .wrapper .btn:hover {
@@ -246,13 +245,19 @@ body {
     color: #039BE5;
 }
 
-@media(max-width: 380px) {
+@media (max-width: 380px) {
     .wrapper {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
     }
 }
 
-.static{
+.static {
     position: fixed;
+    z-index: 999;
+}
+
+.fix-in-right {
+    position: absolute;
+    right: 0;
 }
