@@ -12,21 +12,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <?php if ($_GET['uc'] == 'listeModule' && $_GET['action'] == 'detailsModule')  { ?>
-        <style>
-            .sidebar {
-                height: 150vh;
-            }
-
-            @media (max-width: 767px) {
-                /* Styles pour les téléphones */
-                .sidebar {
-                    height: 50vh;
-                }
-            }
-        </style>
-    <?php } ?>
 </head>
 
 <body class="bg-light">
