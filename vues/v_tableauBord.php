@@ -1,21 +1,21 @@
-<div class="d-flex h-100 max-height">
-    <div class="d-flex flex-column w-75 m-4">
-        <div class="rounded-4 bg-white shadow d-flex justify-content-center align-items-center w-100 h-25">
-            <div class="rounded-4 bg-danger w-25 h-75 shadow m-4 d-flex flex-column justify-content-center align-items-center py-2">
+<div class="d-xl-flex h-100 max-height">
+    <div class="d-xl-flex flex-column w-auto h-auto m-4">
+        <div class="rounded-4 bg-white shadow d-flex flex-wrap justify-content-center align-items-center w-100 h-auto m-auto">
+            <div class="rounded-4 bg-danger w-25 h-75 shadow m-4 d-flex flex-column justify-content-center align-items-center p-2 flex-fill">
                 <p class=" text-white fs-6 mb-0 text-center"> Nombre de modules </p>
                 <p class=" text-white fs-2 mb-0"> <?php echo $nombreModules ?> </p>
             </div>
-            <div class="rounded-4 bg-success w-25 h-75 shadow m-4 d-flex flex-column align-items-center py-2">
+            <div class="rounded-4 bg-success w-25 h-75 shadow m-4 d-flex flex-column align-items-center p-2 flex-fill">
                 <p class=" text-white fs-6 mb-0 text-center"> Nombre de données envoyés </p>
                 <p class=" text-white fs-2 mb-0"> <?php echo $nombreDonnees[0] ?> </p>
             </div>
-            <div class="rounded-4 bg-warning w-25 h-75 shadow m-4 d-flex flex-column align-items-center py-1">
+            <div class="rounded-4 bg-warning w-25 h-75 shadow m-4 d-flex flex-column align-items-center p-2 flex-fill">
                 <p class=" text-white fs-6 mb-0 text-center"> Nombre de modules inactifs actuellement </p>
                 <p class=" text-white fs-2 mb-0"> <?php echo $nombreModulesInactifs[0] ?> </p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center w-100 h-75">
-            <div class="rounded-4 bg-light w-50 h-75 shadow me-3 d-flex flex-column align-items-center p-2">
+        <div class="d-xl-flex mt-2 justify-content-center align-items-center w-100 h-75">
+            <div class="rounded-4 bg-light w-50 h-75 shadow me-3 mt-2 mb-2 d-flex flex-column align-items-center p-2">
                 <span> test</span>
             </div>
             <div class="rounded-4 bg-light w-50 h-75 shadow ms-3 d-flex flex-column align-items-center p-2">

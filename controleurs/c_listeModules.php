@@ -8,7 +8,6 @@ switch($action){
     case 'listeModules':{
         $id = $_SESSION['id'];
         $lesModules = recupererModules($id);
-        var_dump($id);
         include("vues/v_listeModules.php");
 		break;
     }
@@ -16,7 +15,7 @@ switch($action){
         $idModule = $_GET['id'];
         $module = recupererInfosModules($idModule);
         $temp = recupererTemperature($idModule);
-        $heures = json_encode($temp['heures']);
+        $heures = json_encode(array_reverse($temp['heures']));
         $data = json_encode($temp['mesures']);
         include("vues/detailsModule.php");
         break;

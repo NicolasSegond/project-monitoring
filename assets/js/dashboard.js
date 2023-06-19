@@ -19,4 +19,24 @@ function creerGraphiqueTemperature($data,$labels) {
             }
         }
     });
+
+    new Chart(document.getElementById("myChart2"), {
+        type: 'line',
+        data: {
+            labels: $labels,
+            datasets: [
+                {
+                    data: $data,
+                    label: "Température",
+                    borderColor: "#3cba9f",
+                    fill: true
+                }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart JS Line Chart Example'
+            }
+        }
+    });
 }

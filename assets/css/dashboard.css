@@ -1,11 +1,3 @@
-.sidebar .nav-link {
-    color: #fff;
-}
-
-.content {
-    padding: 20px;
-}
-
 .nav-link {
     font-size: 17px;
     line-height: 40px;
@@ -235,9 +227,17 @@
     color: #039BE5;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 780px) {
     .wrapper {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
+    }
+
+    .responsive-fixed{
+        position: relative !important;
+    }
+
+    .responsive-absolute{
+        position: relative !important;
     }
 }
