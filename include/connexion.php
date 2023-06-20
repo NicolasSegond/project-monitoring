@@ -1,6 +1,8 @@
 
 <?php
-
+/**
+ * Class permettant la connexion a la base de donnée
+ */
 class PdoMonitoring
 {
     private static $serveur = 'mysql:host=localhost';

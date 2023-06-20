@@ -14,12 +14,9 @@
                 <p class=" text-white fs-2 mb-0"> <?php echo $nombreModulesInactifs[0] ?> </p>
             </div>
         </div>
-        <div class="d-xl-flex mt-2 justify-content-center align-items-center w-100 h-75">
-            <div class="rounded-4 bg-light w-50 h-75 shadow me-3 mt-2 mb-2 d-flex flex-column align-items-center p-2">
-                <span> test</span>
-            </div>
-            <div class="rounded-4 bg-light w-50 h-75 shadow ms-3 d-flex flex-column align-items-center p-2">
-
+        <div class=" mt-2 justify-content-center align-items-center w-100 h-75">
+            <div class="rounded-4 bg-light w-100 h-100 shadow me-3 mt-2 mb-2 d-flex flex-column align-items-center p-2">
+                <canvas id="myChart2" class="w-100 h-100"></canvas>
             </div>
         </div>
     </div>

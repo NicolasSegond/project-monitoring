@@ -16,6 +16,10 @@ if (!isset($_GET['uc'])) {
 
 session_start();
 
+/**
+ * Je récupère l'uc à partir de l'url puis grâce au switch j'affiche les pages correspondante 
+ * (dashboard.php étant le menu avec la partie <head></head> comprises dedans j'évite alors de le réécrire dans chaque page)
+ */
 $uc = $_GET['uc'];
 switch ($uc) {
     case 'connexion':{
@@ -44,13 +48,18 @@ switch ($uc) {
 }
 
 ?>
+<!-- Fermeture des balises du <body></body> ect... de dashboard.php -->
+            </div>
+        </div>
+    </div>
+</div>
 
-</div>
-</div>
-</div>
-</div>
+<!-- intégration du javascript afin d'afficher les graphiques -->
 <script>
-    creerGraphiqueTemperature(<?php echo $data ?>, <?php echo $heures ?>);
+    creerGraphiqueEtat(<?php echo $etat ?>, <?php echo $heuresEtat ?>);
+</script>
+<script>
+    creerGraphiqueTemperature(<?php echo $data ?>, <?php echo $heures ?>, <?php echo $joursConso ?>, <?php echo $consommationJournaliere ?>);
 </script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

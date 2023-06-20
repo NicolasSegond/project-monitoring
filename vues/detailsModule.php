@@ -22,18 +22,18 @@
         <canvas id="myChart" class="w-100 h-100 p-4"></canvas>
     </div>
     <div class="rounded-4 bg-white w-auto h-auto m-4 shadow d-flex justify-content-center align-items-center flex col-md">
-        <canvas id="myChart2" class="w-100 h-100 p-4"></canvas>
+        <canvas id="ChartConso" class="w-100 h-100 p-4"></canvas>
     </div>
 </div>
 
-<div class="d-flex justify-content-center align-items-center mb-2">
+<!--<div class="d-flex justify-content-center align-items-center mb-2">
     <div class="rounded-4 bg-white w-50 h-75 m-4 shadow d-flex justify-content-center align-items-center">
         <canvas id="myChart" class="w-100 h-100 p-4"></canvas>
     </div>
     <div class="rounded-4 bg-white w-50 h-75 m-4 shadow d-flex justify-content-center align-items-center">
         
     </div>
-</div>
+</div>-->
 
 
 
