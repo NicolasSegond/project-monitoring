@@ -214,10 +214,11 @@ function recupererModulesInactif($idUtilisateur)
  *
  * @return Array
  */
-function recupererNombreDonneesEnvoyes()
+function recupererNombreDonneesEnvoyes($id)
 {
     $pdo = PdoMonitoring::getPdo();
-    $monObjPdoStatement = $pdo->prepare("SELECT Count(Mesure) FROM historique");
+    $monObjPdoStatement = $pdo->prepare("SELECT Count(Mesure) FROM historique INNER JOIN modules ON modules.ID = historique.ID_Module WHERE ID_utilisateur = :id");
+    $monObjPdoStatement->BindValue('id', $id);
     if ($monObjPdoStatement->execute()) {
         $nombreDonnees = $monObjPdoStatement->fetch();
     } else {
@@ -231,10 +232,11 @@ function recupererNombreDonneesEnvoyes()
  *
  * @return void
  */
-function recupererNombreModulesInactifs()
+function recupererNombreModulesInactifs($id)
 {
     $pdo = PdoMonitoring::getPdo();
-    $monObjPdoStatement = $pdo->prepare("SELECT Count(ID) FROM Modules WHERE Etat = 'Inactif';");
+    $monObjPdoStatement = $pdo->prepare("SELECT Count(ID) FROM Modules WHERE Etat = 'Inactif' AND ID_utilisateur = :id;");
+    $monObjPdoStatement->BindValue('id', $id);
     if ($monObjPdoStatement->execute()) {
         $nombreDonnees = $monObjPdoStatement->fetch();
     } else {

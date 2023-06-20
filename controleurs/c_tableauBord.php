@@ -13,8 +13,8 @@ switch($action){
     case 'afficherTableau':{
         $lesModulesInactifs = recupererModulesInactif($_SESSION['id']);
         $nombreModules = recupererModules($_SESSION['id'])->rowCount();
-        $nombreDonnees = recupererNombreDonneesEnvoyes();
-        $nombreModulesInactifs = recupererNombreModulesInactifs();
+        $nombreDonnees = recupererNombreDonneesEnvoyes($_SESSION['id']);
+        $nombreModulesInactifs = recupererNombreModulesInactifs($_SESSION['id']);
 
         $graphiqueEtat = dixDerniersModulesInactifs();
         $heuresEtat = json_encode(array_reverse($graphiqueEtat['heuresEtat']));
