@@ -81,7 +81,6 @@ switch($action){
                
                 if ($executionOK==true){
                     $msg = "c'est bon, votre compte a bien été créé ;-)";
-                    include("vues/login.php");
                 }   
                 else
                      $msg = "ce login existe déjà, veuillez en choisir un autre";
