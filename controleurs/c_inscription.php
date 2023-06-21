@@ -53,6 +53,12 @@ switch($action){
             //supprimer les espaces avant/après saisie
             $leLogin = trim($leLogin);
             $lePassword = trim($lePassword);
+
+            // test si le login existe déjà ou non
+            if(testMail($leLogin) == true){
+                $msg = 'le mail existe déjà';
+                $loginOk=false;
+            }
             
             //vérification du format du login
            if (!filter_var($leLogin, FILTER_VALIDATE_EMAIL)) {
@@ -60,7 +66,7 @@ switch($action){
                 $loginOk=false;
             }
             
-          
+            // test le format du mot de passe
             $patternPassword='#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W){12,}#';
             if (preg_match($patternPassword, $lePassword)==false){
                 $msg = 'Le mot de passe doit contenir au moins 12 caractères, une majuscule,'
@@ -79,7 +85,10 @@ switch($action){
                 }   
                 else
                      $msg = "ce login existe déjà, veuillez en choisir un autre";
-            }
+                     include('vues/register.php');
+        }else{
+            include('vues/register.php');
+        }
         break;	
     }
     

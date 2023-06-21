@@ -25,6 +25,26 @@ function creeUtilisateur($nom, $prenom, $email, $mdp)
 }
 
 /**
+ * fonction qui test si l'email existe déjà ou non dans la base de données
+ *
+ * @param [text] $login
+ * @return Object
+ */
+function testMail($login){
+    $pdo = PdoMonitoring::getPdo();
+    $req = $pdo->prepare("SELECT count(mail) FROM utilisateur WHERE mail = :login");
+    $req->BindValue(":login", $login);
+    $req->execute();
+    $resultat = $req->fetch();
+    if ($resultat[0] == 0) {
+        $mailTrouve = false;
+    } else {
+        $mailTrouve = true;
+    }
+    return $mailTrouve;
+}
+
+/**
  * Fonction qui récupère le mot de passe du mail rentré en paramètre
  *
  * @param [text] $login
