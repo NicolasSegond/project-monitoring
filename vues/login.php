@@ -30,6 +30,14 @@
         <div class="text-center fs-6">
             <a href="http://localhost/projet-monitoring/index.php?uc=inscription&action=demandeInscription" class="fs-5 text-decoration-none text-info"> S'inscrire </a>
         </div>
+        <div class="text-center fs-6">
+            <span>
+                <?php
+                if (isset($msg)) {
+                    echo $msg;
+                } ?>
+            </span>
+        </div>
     </div>
 </body>
 

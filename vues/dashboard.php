@@ -1,3 +1,7 @@
+<?php
+if (!$_SESSION['id'])
+    header('Location: index.php?uc=connexion&action=demandeConnexion');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -46,7 +50,7 @@
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="link-dark" href="#">Deconnexion</a>
+                                    <a class="link-dark" href="index.php?uc=connexion&action=deconnexion">Deconnexion</a>
                                 </li>
                             </ul>
                         </div>

@@ -5,11 +5,12 @@ require_once('include/fct.php');
 date_default_timezone_set('Europe/Paris');
 $pdo = PdoMonitoring::getPdo();
 
-// $estConnecte = estConnecte();
+$estConnecte = estConnecte();
+
 if (!isset($_GET['uc'])) {
     $_GET['uc'] = 'connexion';
 } else {
-    if ($_GET['uc'] == "connexion") {
+    if ($_GET['uc'] == "connexion" && !estConnecte()) {
         $_GET['uc'] = 'connexion';
     }
 }

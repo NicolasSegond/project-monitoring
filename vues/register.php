@@ -36,6 +36,14 @@
         <div class="text-center fs-6">
             <a href="http://localhost/projet-monitoring/index.php?uc=connexion&action=demandeConnexion " class="fs-5 text-decoration-none text-info"> Se connecter </a>
         </div>
+        <div class="text-center fs-6">
+            <span>
+                <?php
+                if (isset($msg)) {
+                    echo $msg;
+                } ?>
+            </span>
+        </div>
     </div>
 </body>
 

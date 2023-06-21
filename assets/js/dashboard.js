@@ -62,7 +62,7 @@ function creerGraphiqueEtat($etat, $heures) {
             labels: $heures,
             datasets: [
                 {
-                    label: 'état des modules',
+                    label: 'Nombre de modules inactifs',
                     data: $etat,
                     fill: false,
                     stepped: true,

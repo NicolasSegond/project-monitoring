@@ -275,7 +275,9 @@ function dixDerniersModulesInactifs()
     $monObjPdoStatement = $pdo->prepare("
     SELECT DATE_FORMAT(date, '%Y-%m-%d') AS jour, DATE_FORMAT(date, '%H:%i') AS heure, COUNT(*) AS nombre_modules_inactifs
     FROM historique
-    WHERE etat = 'Inactif'
+    INNER JOIN modules
+    ON modules.ID = historique.ID_Module
+    WHERE historique.etat = 'Inactif' AND ID_utilisateur = 1
     GROUP BY jour, heure 
     ORDER BY date DESC
     LIMIT 10;");
